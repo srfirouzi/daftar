@@ -8,7 +8,7 @@
   - [x] image
   - [x] modifier(rtl/ltr,sml,text-align,padding,margin,shadow,border)
 - [ ] small parts
-  - [ ] icon
+  - [x] icon
   - [ ] avatar
   - [ ] divider
   - [ ] spinier
