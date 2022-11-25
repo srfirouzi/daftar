@@ -1,0 +1,24 @@
+.test-box-4{
+    display: inline-block;
+    border: 1px solid var(--color-pen);
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.5em;
+  }
+  
+  .test-box-6{
+    display: inline-block;
+    border: 1px solid var(--color-pen);
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.5em;
+  }
+  
+  .block-item{
+    border: 1px solid var(--color-pen);
+    background-color: var(--color-pen);
+  }

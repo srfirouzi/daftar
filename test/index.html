@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../daftar.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="../daftar.js"></script>
+    <script src="script.js"></script>
+    <title>test daftar</title>
+</head>
+<body>
+    <header class="bar large">
+        <img>
+        <h3>daftar Test</h3> 
+        <span class="spacer"></span>
+        <label>desktop<input type="checkbox" class="switch small" id="desktop" ></label>
+        <label>theme<input type="checkbox" class="switch small" id="theme" ></label>
+        <button class="btn none c-b-none active">none</button>
+        <button class="btn none c-b-rtl "><i class="icon-arrow-left"></i>RTL</button>
+        <button class="btn none c-b-ltr "><i class="icon-arrow-right"></i>LTR</button>
+    </header>
+    <main id="main">
+        <template>
+            <section class="card">
+              <header class="small bar">
+                <h2>title</h2>
+                <span class="spacer"></span>
+                <button class="btn none c-none active">none</button>
+                <button class="btn none c-rtl "><i class="icon-arrow-left"></i>RTL</button>
+                <button class="btn none c-ltr "><i class="icon-arrow-right"></i>LTR</button>
+              </header>
+              <div class="content padding">
+                Content
+              </div>
+            </section>
+        </template>
+    </main>
+</body>
+</html>
