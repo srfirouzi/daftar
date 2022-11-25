@@ -23,13 +23,13 @@
   - [ ] tag
 - [ ] container/component
   - [ ] menu/content
-  - [ ] bar
+  - [x] bar
   - [ ] group(input/btn)
   - [ ] stack
   - [ ] mask
   - [ ] grid
   - [ ] page
-  - [ ] card
+  - [x] card
   - [ ] modal
   - [ ] table
   - [ ] list
