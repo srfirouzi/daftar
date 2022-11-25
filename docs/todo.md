@@ -1,1 +1,38 @@
 # version 0
+
+- [ ] reset tags by normalize.css v8.0.1
+- [ ] base / typography
+  - [ ] variable(colors/round/font)
+  - [ ] base
+  - [ ] typography
+  - [ ] image
+  - [ ] modifier(rtl/ltr,sml,text-align,padding,margin,shadow,border)
+- [ ] small parts
+  - [ ] icon
+  - [ ] avatar
+  - [ ] divider
+  - [ ] spinier
+  - [ ] space
+  - [ ] badge
+  - [ ] tooltip
+- [ ] parts
+  - [ ] btn
+  - [ ] dropdown
+  - [ ] input/switch/progress/
+  - [ ] tab
+  - [ ] tag
+- [ ] container/component
+  - [ ] menu/content
+  - [ ] bar
+  - [ ] group(input/btn)
+  - [ ] stack
+  - [ ] mask
+  - [ ] grid
+  - [ ] page
+  - [ ] card
+  - [ ] modal
+  - [ ] table
+  - [ ] list
+  - [ ] drawer
+  - [ ] collapse
+  
