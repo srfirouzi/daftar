@@ -23,20 +23,78 @@
         <button class="btn none c-b-ltr "><i class="icon-arrow-right"></i>LTR</button>
     </header>
     <main id="main">
-        <template>
-            <section class="card">
-              <header class="small bar">
-                <h2>title</h2>
-                <span class="spacer"></span>
-                <button class="btn none c-none active">none</button>
-                <button class="btn none c-rtl "><i class="icon-arrow-left"></i>RTL</button>
-                <button class="btn none c-ltr "><i class="icon-arrow-right"></i>LTR</button>
-              </header>
-              <div class="content padding">
-                Content
-              </div>
-            </section>
-        </template>
+      <section class="card">
+        <header class="small bar">
+          <h2>Colors</h2>
+          <span class="spacer"></span>
+          <button class="btn none c-none active">none</button>
+          <button class="btn none c-rtl "><i class="icon-arrow-left"></i>RTL</button>
+          <button class="btn none c-ltr "><i class="icon-arrow-right"></i>LTR</button>
+        </header>
+        <div class="content padding">
+          <div class="border box-6" style="background-color: var(--color-bg);color:var(--color-fg)" >bg</div>
+          <div class="border box-6" style="background-color: var(--color-fg);color:var(--color-bg)">fg</div>
+          <div class="border box-6" style="background-color: var(--color-deep);color:var(--color-fg)">deep</div>
+          <div class="border box-6" style="background-color: var(--color-pen);color:var(--color-fg)">pen</div>
+          <div class="border box-6" style="background-color: var(--color-fill);color:var(--color-fill-negative)">fill</div>
+          <div class="border box-6" style="background-color: var(--color-link);color:var(--color-link-negative)">link</div>
+        </div>
+      </section>
+      <section class="card">
+        <header class="small bar">
+          <h2>Typography</h2>
+          <span class="spacer"></span>
+          <button class="btn none c-none active">none</button>
+          <button class="btn none c-rtl "><i class="icon-arrow-left"></i>RTL</button>
+          <button class="btn none c-ltr "><i class="icon-arrow-right"></i>LTR</button>
+        </header>
+        <div class="content padding">
+          <h1>h1 header</h1><h2>h2 header</h2><h3>h3 header</h3>
+          <h4>h4 header</h4><h5>h5 header</h5><h6>h6 header</h6>
+          <hr/>
+          <pre> pre </pre><code> code </code><kbd> kbd </kbd><samp> samp </samp><a href="#">link</a>
+          <b> bold </b> <i> italic </i>text<sub>sub</sub>text<sup>sup</sup><abbr title="title"> abbr tag </abbr>
+          <br>
+          <div class="text-start">text-start</div>
+          <div class="text-end">text-end</div>
+          <div class="text-center">text-center</div>
+          <div class="text-justify">text-justify</div>
+        </div>
+      </section>
+      <section class="card">
+        <header class="small bar">
+          <h2>Image</h2>
+          <span class="spacer"></span>
+          <button class="btn none c-none active">none</button>
+          <button class="btn none c-rtl "><i class="icon-arrow-left"></i>RTL</button>
+          <button class="btn none c-ltr "><i class="icon-arrow-right"></i>LTR</button>
+        </header>
+        <div class="content padding">
+          <div class="inline"><figure><img src="assets/ali.jpg" class="box-12"/> <figcaption>normal</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/fa.jpg" class="box-12 border"/> <figcaption>border</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/ali.jpg" class="box-12 shadow"/> <figcaption>shadow</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/fa.jpg" class="box-12 round"/> <figcaption>round</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/ali.jpg" class="box-12 circle"/> <figcaption>circle</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/fa.jpg" class="box-12 round shadow"/> <figcaption>round shadow</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/ali.jpg" class="box-12 circle border shadow"/> <figcaption>circle border shadow</figcaption></figure></div>
+          <div class="inline"><figure><img src="assets/fa.jpg" class="box-12 round shadow border"/> <figcaption>round shadow border</figcaption></figure></div>
+          <div class="border" style="width:700px ;"><img src="assets/header.jpg" class="block" /></div>
+        </div>
+      </section>
+      <template>
+          <section class="card">
+            <header class="small bar">
+              <h2>title</h2>
+              <span class="spacer"></span>
+              <button class="btn none c-none active">none</button>
+              <button class="btn none c-rtl "><i class="icon-arrow-left"></i>RTL</button>
+              <button class="btn none c-ltr "><i class="icon-arrow-right"></i>LTR</button>
+            </header>
+            <div class="content padding">
+              Content
+            </div>
+          </section>
+      </template>
     </main>
 </body>
 </html>

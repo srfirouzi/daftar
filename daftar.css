@@ -1,0 +1,89 @@
+/* daftar.css framework license MIT */
+/* normalize.css v8.0.1  */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/* end normalize.css */
+*,*::after,*::before{box-sizing:border-box}
+html{
+    font-family:var(--font-family);
+    font-size:16px;
+    line-height:1.5;
+}
+body{
+  padding:0;
+  overflow-x:hidden;
+  color:var(--color-fg);
+  background-color:var(--color-deep);
+}
+
+hr{border:0;border-top:1px solid var(--color-pen);margin:1rem 0}
+a{color:var(--color-link);text-decoration:none;outline:0}
+a:focus,a:hover{text-decoration:underline;outline:0}
+abbr[title]{cursor:help}
+h1,h2,h3{font-weight:400 ;padding:0 0.5rem;margin:0}
+h4,h5,h6{font-weight:bold;padding:0 0.5rem;margin:0}
+h1{font-size:3rem}
+h2{font-size:2.5rem}
+h3{font-size:2rem}
+h4{font-size:1.5rem}
+h5{font-size:1rem}
+h6{font-size:0.75rem}
+img.block{height:auto}
+img.border{padding:0.25rem;background-color:#ffffff}
+figcaption{text-align:center}
+
+
+/** helper-modifier-controller **/
+.spacer,.center{margin:auto}
+.rest{flex:1 0 auto}
+.small{font-size:0.75rem}
+.normal{font-size:1rem}
+.large{font-size:1.25rem}
+.inline{display:inline-flex;width:auto}
+.block{display:flex;width:100%;}
+.ltr{direction:ltr}
+.rtl{direction:rtl}
+.ltr .text-start,.text-start{text-align:left!important}
+.rtl .text-start{text-align:right!important}
+.ltr .text-end,.text-end{text-align:right!important}
+.rtl .text-end{text-align:left!important}
+.text-justify{text-align:justify!important}
+.text-center{text-align:center!important}
+.padding-s{padding: 0.25em;}
+.padding,.padding-m{padding:0.5em ;}
+.padding-l{padding: 1em;}
+.margin-s{margin: 0.25em;}
+.margin,.margin-m{margin:0.5em ;}
+.margin-l{margin: 1em;}
+.shadow{box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4),0 4px 12px rgba(0, 0, 0, 0.2)}
+.border{border: 1px solid var(--color-pen);}
+.circle{border-radius:50% }
+.round{border-radius:var(--round)}
+
+:root,.light{
+    --color-bg:#ffffff ;
+	--color-fg:#191919;
+	--color-deep:#f2f2f2;
+	--color-pen:#d9d9d9;
+	--color-link:#1a66b2;
+    --color-link-negative:#ffffff;
+    /* TODO meaningful colors*/
+    /* themplate */
+    --font-family:sans-serif;
+    --color-fill:#66a02c;
+    --color-fill-negative:#191919;
+    --round:5px;
+}
+.dark{
+    --color-bg:#191919 ;
+	--color-fg:#e6e6e6;
+	--color-deep:#333333;
+	--color-pen:#4c4c4c;
+	--color-link:#104070;
+    --color-link-negative:#e6e6e6;
+    /* TODO meaningful colors*/
+    /* themplate */
+    --font-family:sans-serif;
+    --color-fill:#40641c;
+    --color-fill-negative:#e6e6e6;
+    --round:5px;
+}

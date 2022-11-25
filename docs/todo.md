@@ -1,12 +1,12 @@
 # version 0
 
-- [ ] reset tags by normalize.css v8.0.1
-- [ ] base / typography
-  - [ ] variable(colors/round/font)
-  - [ ] base
-  - [ ] typography
-  - [ ] image
-  - [ ] modifier(rtl/ltr,sml,text-align,padding,margin,shadow,border)
+- [x] reset tags by normalize.css v8.0.1
+- [x] base / typography
+  - [x] variable(colors/round/font)
+  - [x] base
+  - [x] typography
+  - [x] image
+  - [x] modifier(rtl/ltr,sml,text-align,padding,margin,shadow,border)
 - [ ] small parts
   - [ ] icon
   - [ ] avatar
@@ -35,4 +35,4 @@
   - [ ] list
   - [ ] drawer
   - [ ] collapse
-  
+
