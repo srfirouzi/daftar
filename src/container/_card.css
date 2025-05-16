@@ -1,0 +1,8 @@
+.card{
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4),0 4px 12px rgba(0, 0, 0, 0.2);
+	background-color: var(--color-bg);
+
+}
+.card>*{margin: 0.5em;}
+.card>img{margin:0;width:100%}
+.card>.bar{margin: 0 0.5em;}

@@ -1,0 +1,29 @@
+{
+	"name": "daftar",
+	"version": "1.0.0-apha",
+	"scripts": {
+		"build": "npm run clean && npm run build:css && npm run copy:assets && npm run minimize",
+        "clean": "rimraf dist/*",
+		"build:css": "npm run build:modern-css && npm run build:ie-css",
+		"build:modern-css": "postcss src/daftar.css -o dist/daftar.css",
+		"build:ie-css": "npm run build:dark && npm run build:light",
+		"build:dark": "postcss src/daftar-dark.css -o dist/daftar-dark.css --env ie",
+		"build:light": "postcss src/daftar-light.css -o dist/daftar-light.css --env ie",
+		"copy:assets": "cpy src/font/* dist/font/ && cpy src/daftar.js dist/ ",
+		"minimize":"npm run minimize:css && npm run minimize:js",
+		"minimize:css" : "npm run minimize:daftar && npm run minimize:dark && npm run minimize:light",
+		"minimize:daftar":"esbuild dist/daftar.css --minify --outfile=dist/daftar.min.css",
+		"minimize:dark":"esbuild dist/daftar-dark.css --minify --outfile=dist/daftar-dark.min.css",
+		"minimize:light":"esbuild dist/daftar-light.css --minify --outfile=dist/daftar-light.min.css",
+		"minimize:js": "esbuild dist/daftar.js --minify --outfile=dist/daftar.min.js"
+	},
+	"devDependencies": {
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0",
+		"postcss-import": "^15.1.0",
+		"postcss-custom-properties": "^13.1.0",
+		"esbuild": "^0.19.2",
+		"cpy-cli": "^3.1.1",
+		"rimraf": "^5.0.1"
+	}
+  }

@@ -1,0 +1,55 @@
+input[type="radio"]{
+	color: var(--color-accent);
+	width:1.5em!important;
+	height:1.5em!important;
+	display:inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	position:relative;
+	padding:0;
+	min-width: 0;
+	min-height: 0;
+	border-radius:50%;
+}
+input[type="radio"]::before{
+	content:' ';
+	border-radius:50%;
+	width:calc( 100% - 0.5em);
+	height:calc( 100% - 0.5em);
+	position:absolute;
+	top:0.25em;
+	left:0.25em;
+	background-color:currentColor;
+	display: none;
+	transition:background-color 0.3s ease-out
+}
+input[type="radio"]:checked:not(:disabled){border-color:currentColor ;}
+input[type="radio"]:checked::before{display: inline-block;}
+input[type="radio"]:checked:disabled::before{background-color: var(--color-bg);}
+
+input[type="radio"].valid{color: var(--color-success);}
+input[type="radio"].invalid{color: var(--color-danger);}
+
+
+/* radio ie 11 */
+input[type="radio"]::-ms-check{
+	color: var(--color-accent);
+	border: 1px solid var(--color-pen);
+}
+input[type="radio"]:focus::-ms-check{
+	border-color: var(--color-accent);
+}
+input[type="radio"]:checked::-ms-check{
+	border-color: var(--color-accent);	
+}
+
+input.valid[type="radio"]::-ms-check{
+	color: var(--color-success);
+	border-color: var(--color-success);
+}
+
+input.invalid[type="radio"]::-ms-check{
+	color: var(--color-danger);
+	border-color: var(--color-danger);
+}

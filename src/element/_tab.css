@@ -1,0 +1,30 @@
+.tab{
+	border: none;
+	background-color:transparent;
+	color: var(--color-accent);
+	display:inline-block;
+	line-height:1.5;
+	cursor:pointer;
+	white-space:nowrap;
+	text-decoration:none;
+	padding: 0.5em 1em;
+	font-weight:400;
+	position:relative;
+	align-self:flex-end;
+	border-radius: 0;
+}
+
+.tab:hover{
+	border-bottom: 0.25em solid currentColor;
+	padding-bottom: 0.25em ;
+	text-decoration:none;
+}
+.tab:focus{text-decoration:none;}
+.tab.active{
+	border-bottom: 0.25em solid currentColor;
+	padding-bottom: 0.25em ;
+    color: var(--color-accent);
+}
+.tab.success{background-color: transparent; color: var(--color-success);}
+.tab.warning{background-color: transparent; color: var(--color-warning);}
+.tab.danger{background-color: transparent; color: var(--color-danger);}

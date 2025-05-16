@@ -1,0 +1,36 @@
+progress{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; 
+	background-color: var(--color-deep);
+	display: block;
+	width: 100%;
+	min-width: 12em;
+	border: 0;
+	padding: 0;
+	height: 0.25em;
+}
+progress.inline{display: inline-block;width: auto;}
+progress::-webkit-progress-bar{
+	border: none;
+	background-color: var(--color-deep);
+}
+progress::-webkit-progress-value{
+	background-color: var(--color-accent);
+
+}
+progress::-moz-progress-bar{
+	background-color: var(--color-accent);
+}
+progress::-ms-fill{
+	background-color: var(--color-accent);
+}
+progress.success::-webkit-progress-value{background-color: var(--color-success)}
+progress.success::-moz-progress-bar{background-color:var(--color-success)}
+progress.success::-ms-fill{background-color: var(--color-success)}
+progress.warning::-webkit-progress-value{background-color: var(--color-warning)}
+progress.warning::-moz-progress-bar{background-color: var(--color-warning)}
+progress.warning::-ms-fill{background-color: var(--color-warning)}
+progress.danger::-webkit-progress-value{background-color: var(--color-danger)}
+progress.danger::-moz-progress-bar{background-color: var(--color-danger)}
+progress.danger::-ms-fill{background-color: var(--color-danger)}

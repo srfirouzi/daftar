@@ -1,0 +1,32 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown>button:first-child {
+    background-color: transparent;
+    color: var(--color-accent);
+}
+
+.dropdown>button:first-child:active {
+    background-color: var(--color-accent-low);
+}
+
+.dropdown>.menu{font-size: 0.75em;}
+
+.dropdown > *:last-child{
+    cursor: auto;
+    color: var(--color-fg);
+    background-color:var(--color-bg);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4),0 6px 18px rgba(0, 0, 0, 0.2) ;
+	max-height: 70vh;
+	overflow-y: auto;
+}
+.dropdown.show > *:last-child{display: block}

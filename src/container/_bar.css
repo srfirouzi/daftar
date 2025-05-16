@@ -1,0 +1,21 @@
+.bar{
+	display:flex;
+	background-color: var(--color-bg);
+	flex-flow:row nowrap;
+	justify-content:flex-start;
+	align-items:center;
+	align-content:center;
+	padding: 0 0.5em;
+}
+
+.bar.inline{display: inline-flex}
+.bar.none{background-color: transparent;}
+.bar.outline{border: 1px solid var(--color-pen);}
+
+
+.bar>*{margin: 0.25em;flex: 0 0 auto;}
+/*.bar>button.none{padding: 0.25em;}*/
+
+.gap,.center{margin:auto !important}
+.rest{flex:1 0 auto}
+

@@ -1,0 +1,45 @@
+/* tag */
+.tag{
+	background-color: var(--color-accent);
+	color: var(--color-bg);
+	display: inline-block;
+	text-align: center;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	overflow: visible;
+	white-space: nowrap;
+	padding: 0.25em 0.5em;
+	border-radius: 0.25em;
+	min-width: 2em;
+	vertical-align: middle;
+}
+
+.tag[class*="icon-"]:empty{
+	min-width: 2em;
+	min-height: 2em;
+	padding: 0.25em 0.25em;
+}
+.tag[class*="icon-"]:before , .ltr .tag[class*="icon-"]:before{
+	margin-right: 0.25em;
+	margin-left: 0;
+}
+.rtl .tag[class*="icon-"]:before{
+	margin-right: 0;
+	margin-left: 0.25em;
+}
+
+.tag[class*="icon-"]:empty:before{
+	margin: 0;
+}
+
+.tag.success{background-color:var(--color-success)}
+.tag.warning{background-color:var(--color-warning)}
+.tag.danger{background-color:var(--color-danger)}
+
+.tag.outline{border: 1px solid currentColor;background-color: transparent;}
+.tag.outline{color:var(--color-accent)}
+.tag.success.outline{color: var(--color-success);}
+.tag.warning.outline{color: var(--color-warning);}
+.tag.danger.outline{color: var(--color-danger);}

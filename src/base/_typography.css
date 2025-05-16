@@ -1,0 +1,177 @@
+
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}
+audio:not([controls]){display:none;height:0}
+
+hr,.hr {
+	border: 0;
+	border-top: 1px solid var(--color-accent);
+	margin: 0.25em 0;
+	padding: 0 !important;
+	height: 0 !important;
+	overflow: visible;
+}
+vr,.vr{
+	border: 0;
+	border-left: 1px solid var(--color-accent);
+	align-self: stretch;
+	margin: 0 0.25em;
+	padding: 0 !important;
+	width: 0 !important;
+	overflow: visible;
+	display: inline-block;
+}
+
+.spacer {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin: 0;
+}
+
+a {
+	color: var(--color-accent);
+	background-color: transparent;
+	text-decoration: none;
+	outline: 0
+}
+
+/* typography */
+
+abbr{
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	cursor: help;
+}
+mark{
+	padding: .125em .25em;
+	background-color: var(--color-warning-low);
+	vertical-align: baseline;
+	border-radius: 4px;
+}
+
+kbd {
+	background-color: var(--color-pen);
+	color: var(--color-fg);
+	vertical-align: baseline;
+	padding: 0.125em 0.25em;
+	border-radius: 4px;
+}
+small {font-size: 0.75em;}
+
+blockquote ,.ltr blockquote {
+	display: block;
+	padding: 1em;
+	margin: 0.5em;
+	border: 0 solid var(--color-accent);
+	background-color: var(--color-accent-low);
+	border-left-width: 0.5em;
+}
+.rtl blockquote {
+	border-right-width:0.5em ;
+	border-left-width: 0;
+}
+
+blockquote>h4::before{
+	font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+	font-size: 1.5em;
+    vertical-align: bottom;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+}
+
+blockquote>h4::before{
+	content: "\f12c";
+	color: var(--color-accent);
+}
+
+blockquote.success{
+	background-color: var(--color-success-low);
+	border-color: var(--color-success);
+}
+
+blockquote.success>h4::before{
+	content: "\f129";
+	color: var(--color-success);
+}
+
+blockquote.warning{
+	background-color: var(--color-warning-low);
+	border-color: var(--color-warning);
+}
+blockquote.warning>h4::before{
+	content: "\f1af";
+	color: var(--color-warning);
+}
+blockquote.danger{
+	background-color: var(--color-danger-low);
+	border-color: var(--color-danger);
+}
+blockquote.danger>h4::before{
+	content: "\f12a";
+	color: var(--color-danger);
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 500;
+	padding: 0;
+	margin:1rem 0 ;
+}
+h1 {font-size: 4em}
+h2 {font-size: 3em}
+h3 {font-size: 2em}
+h4 {font-size: 1.5em}
+h5 {font-size: 1em}
+h6 {font-size: 0.75em}
+
+.ltr{direction:ltr}
+.rtl{direction:rtl}
+
+
+.ltr .text-start,.text-start{text-align:left!important}
+.rtl .text-start{text-align:right!important}
+.ltr .text-end,.text-end{text-align:right!important}
+.rtl .text-end{text-align:left!important}
+.text-justify{text-align:justify!important}
+.text-center{text-align:center!important}
+
+.small{font-size: 0.75rem;}
+.medium{font-size: 1rem;}
+.large{font-size: 1.5rem;}
+.x2{font-size: 2rem;}
+.x3{font-size: 3rem;}
+
+/* table */
+.table{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	display:table
+}
+.table  tr ,.table td{border:none ;}
+
+.table tr{border-bottom:1px solid var(--color-pen)}
+.table tr:first-child{border-bottom-width:2px}
+.table tr:last-child{border:none}
+.ltr .table td,.table td,.ltr .table th,.table th{
+	padding:0.5rem 0.5rem;
+	display:table-cell;
+	vertical-align:middle
+}
+.table.strip tr:nth-child(even){background-color:var(--color-deep)}
+.table.strip tr:nth-child(odd){background-color:var(--color-bg)}
+.table.strip tr:first-child{background-color:unset}
+.table.outline tr td,table.outline tr th{border:1px solid var(--color-pen)}
+.table.hover tr:not(:first-child):hover{background-color:var(--color-bg)}
+.ltr .table td,.ltr .table th,.table td,.table th{text-align: left;}
+.rtl .table td,.rtl .table th{text-align: right;}
+.table tr.success{background-color:var(--color-success-low)}
+.table tr.warning{background-color:var(--color-warning-low)}
+.table tr.danger{background-color:var(--color-danger-low)}
+.table tr.accent{background-color:var(--color-accent-low)}

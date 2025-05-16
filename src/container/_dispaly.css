@@ -1,0 +1,17 @@
+.display{position:relative}
+.display .top-center{position:absolute;top:0;left:50%;transform:translate(-50%,0)}
+.display .middle-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.display .bottom-center{position:absolute;bottom:0;left:50%;transform:translate(-50%,0)}
+.display .fill{position:absolute;bottom:0;left:0;top:0;right: 0;}
+.ltr .display .middle-start,.display .middle-start{position:absolute;top:50%;left:0;right:auto;transform:translate(0,-50%)}
+.rtl .display .middle-start{left:auto;right:0}
+.ltr .display .middle-end,.display .middle-end{position:absolute;top:50%;right:0;left:auto;transform:translate(0,-50%)}
+.rtl .display .middle-end{right:auto;left:0}
+.ltr .display .top-start,.display .top-start{position:absolute;top:0;left:0;right:auto}
+.rtl .display .top-start{left:auto;right:0}
+.ltr .display .top-end,.display .top-end{position:absolute;top:0;right:0;left:auto}
+.rtl .display .top-end{right:auto;left:0}
+.ltr .display .bottom-start,.display .bottom-start{position:absolute;bottom:0;left:0;right:auto}
+.rtl .display .bottom-start{left:auto;right:0}
+.ltr .display .bottom-end,.display .bottom-end{position:absolute;bottom:0;right:0;left:auto}
+.rtl .display .bottom-end{right:auto;left:0}

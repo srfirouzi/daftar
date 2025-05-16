@@ -1,0 +1,69 @@
+[data-badge]{position:relative;}
+[data-badge]::before {
+	border: 0;
+	content: attr(data-badge);
+	background-color: var(--color-accent);
+	color: var(--color-bg);
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	text-align: center;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	overflow: visible;
+	white-space: nowrap;
+	border-radius: 1em;
+	min-width: 2em;
+	min-height: 2em;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	transform: translate(50%,-50%);
+	z-index: 20;
+	position: absolute;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+[data-badge=""]::before{
+	min-height: 1em;
+	min-width: 1em;
+	border-radius: 50%;
+}
+
+.circle[data-badge=""]::before{
+	transform: translate(25%,-25%);
+}
+
+[data-badge][class*="icon-"]:before{
+	font-size: 1em;
+	vertical-align: baseline;
+	padding: 0.25em;
+	min-height: 1em;
+	min-width: 1em;
+	border-radius: 50%;
+}
+
+.ltr [data-badge]::before,[data-badge]::before{right:0;left:auto;transform:translate(50%,-50%)}
+.rtl [data-badge]::before{right:auto;left:0;transform:translate(-50%,-50%)}
+
+.ltr .circle[data-badge]::before,.circle[data-badge]::before{right:0;left:auto;transform:translate(25%,-25%)}
+.rtl .circle[data-badge]::before{right:auto;left:0;transform:translate(-25%,-25%)}
+
+
+.badge-success::before{background-color:var(--color-success)}
+.badge-warning::before{background-color:var(--color-warning)}
+.badge-danger::before{background-color:var(--color-danger)}
+
+.badge-bottom[data-badge]::before{top: auto;bottom: 0;}
+
+.ltr .badge-bottom[data-badge]::before,.badge-bottom[data-badge]::before{left:auto;right:0;transform:translate(50%,50%)}
+.rtl .badge-bottom[data-badge]::before{left:0;right:auto;transform:translate(-50%,50%)}
+
+.ltr .badge-bottom.circle[data-badge]::before,.badge-bottom.circle[data-badge]::before{left:auto;right:0;transform:translate(25%,25%)}
+.rtl .badge-bottom.circle[data-badge]::before{left:0;right:auto;transform:translate(-25%,25%)}
+
+.flicker[data-badge]::before{animation: animation-flicker-accent 0.7s ease-out infinite;}
+.flicker[data-badge].badge-success::before{animation: animation-flicker-success 0.7s ease-out infinite;}
+.flicker[data-badge].badge-warning::before{animation: animation-flicker-warning 0.7s ease-out infinite;}
+.flicker[data-badge].badge-danger::before{animation: animation-flicker-danger 0.7s ease-out infinite;}
+

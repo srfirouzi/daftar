@@ -1,0 +1,177 @@
+button,.btn{
+	border: none;
+	background-color: var(--color-accent);
+	color:var(--color-bg) ;
+	display:inline-block;
+	line-height:1.5;
+	cursor:pointer;
+	white-space:nowrap;
+	text-decoration:none;
+	padding: 0.5em 1em;
+	font-weight:500;
+	position:relative;
+	outline:0;
+	transition:background-color 0.2s ease-out,color 0.2s ease-out;
+    vertical-align: middle;
+    text-align: center;
+	border-radius: 0.25em;
+	min-width: 6em;
+}
+
+button.outline,.btn.outline{
+	background-color: transparent; 
+	border: 1px solid currentColor;
+    color:var(--color-accent);
+	background: none;
+	
+}
+button.none,.btn.none  {
+	background-color: transparent;
+	color: var(--color-accent);
+	
+}
+button:active,.btn:active{
+	background-color: var(--color-accent-low);
+	color: var(--color-accent);
+}
+
+
+button.accent,.btn.accent {
+	color: var(--color-bg);
+	background-color: var(--color-accent);
+}
+button.accent.outline,.btn.accent.outline{
+	color: var(--color-accent);
+	background-color: transparent;
+}
+button.none.accent ,.btn.none.accent {
+	color: var(--color-accent);
+	background-color: transparent;
+}
+button.accent:active ,.btn.accent:active{
+	background-color: var(--color-accent-low);
+	color: var(--color-accent);
+}
+/**/
+button.success,.btn.success {
+	color: var(--color-bg);
+	background-color: var(--color-success);
+}
+button.success.outline,.btn.success.outline{
+	color: var(--color-success);
+	background-color: transparent;
+}
+button.none.success ,.btn.none.success {
+	color: var(--color-success);
+	background-color: transparent;
+}
+button.success:active ,.btn.success:active{
+	background-color: var(--color-success-low);
+	color: var(--color-success);
+}
+
+/**/
+button.warning,.btn.warning {
+	color: var(--color-bg);
+	background-color: var(--color-warning);
+}
+button.warning.outline,.btn.warning.outline{
+	color: var(--color-warning);
+	background-color: transparent;
+}
+
+button.none.warning ,.btn.none.warning {
+	color: var(--color-warning);
+	background-color: transparent;
+}
+button.warning:active ,.btn.warning:active{
+	background-color: var(--color-warning-low);
+	color: var(--color-warning);
+}
+
+/**/
+button.danger,.btn.danger {
+	color: var(--color-bg);
+	background-color: var(--color-danger);
+}
+button.danger.outline,.btn.danger.outline{
+	color: var(--color-danger);
+	background-color: transparent;
+}
+
+button.none.danger ,.btn.none.danger {
+	color: var(--color-danger);
+	background-color: transparent;
+}
+button.danger:active ,.btn.danger:active{
+	background-color: var(--color-danger-low);
+	color: var(--color-danger);
+}
+
+
+button:disabled,.btn:disabled{
+	opacity: 0.3;
+	background-color: var(--color-pen) !important;
+	color: var(--color-fg) !important;
+    border-color: var(--color-pen) !important;
+	cursor: not-allowed;
+}
+button.outline:disabled,.btn.outline:disabled{
+    background-color: transparent !important;
+	color: var(--color-fg) !important;
+    border-color: var(--color-pen) !important;   
+}
+button.none:disabled,.btn.none:disabled{
+    background-color: transparent !important;
+	color: var(--color-fg) !important;
+    border-color: transparent !important;   
+}
+
+.btn>*,button>*,.btn::before,button::before{ margin: 0 0.25em;}
+.btn>.badge,button>.badge{padding: 0.25em 1em;min-width: 1.5em;min-height: 1.5em;}
+
+
+button.circle ,.btn.circle{
+	min-width: 2.5em;
+	min-height: 2.5em;
+	border-radius: 50%;
+	padding: 0.25em;
+    
+    line-height: 1;
+}
+.btn.circle>*,button.circle>*{ margin: 0;}
+button.round,.btn.round{border-radius: 2em;}
+
+/* btn-group */
+.btn-group{
+	border: 1px solid transparent;
+	display:inline-flex;
+	flex-flow:row nowrap;
+	justify-content:flex-start;
+	align-items:center;
+	align-content:center;
+	background-color: var(--color-bg);
+	padding: 0 ;
+}
+.btn-group>*{align-self: stretch;flex-grow: 1;border-radius: 0; margin: 0;}
+.btn-group.outline{border-color:var(--color-accent) ;}
+.btn-group.outline>*{background-color: transparent;color: var(--color-accent);}
+.btn-group.outline>*:not(:first-child),.ltr .btn-group.outline>*:not(:first-child){border-left: 1px solid var(--color-accent);border-right: none;}
+.rtl .btn-group.outline>*:not(:first-child){border-right: 1px solid var(--color-accent);border-left:none}
+.btn-group.none>*{background-color: transparent;color: var(--color-accent);background-image: none;}
+.btn-group>button:active{background-color: var(--color-accent-low);color:var(--color-accent)}
+
+.btn-group.round{border-radius: 1.5em;}
+
+.ltr .btn-group.round>*:first-child ,.btn-group.round>*:first-child ,.rtl .btn-group.round>*:last-child {
+	border-top-left-radius: 1.5em;
+	border-bottom-left-radius: 1.5em;
+	border-bottom-right-radius:0;
+	border-top-right-radius:0;
+}
+.ltr .btn-group.round>*:last-child,.btn-group.round>*:last-child,.rtl .btn-group.round>*:first-child{
+	border-top-right-radius: 1.5em;
+	border-bottom-right-radius: 1.5em;
+	border-top-left-radius: 0;
+	border-bottom-left-radius:0;
+}

@@ -1,0 +1,19 @@
+.menu{
+    list-style-type:none;
+    padding:0;
+}
+.menu>a{
+    padding:0.75em 1em;
+    display: flex;
+    margin: 0.5em;
+    color: var(--color-accent);
+}
+.menu a:hover,.menu a:focus{background-color: var(--color-accent-low);}
+.menu a.active{background-color: var(--color-accent);color:var(--color-bg)}
+.menu h3{padding: 0.25em 0.75em;}
+.menu>*>*{align-self: center;}
+
+.menu>*>[class*="icon-"],.ltr .menu>*>[class*="icon-"]{padding-right: 1em;padding-left: unset;}
+.rtl .menu>*>[class*="icon-"]{padding-right: unset; padding-left: 1em;}
+
+.menu a{text-decoration: none;}

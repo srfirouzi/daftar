@@ -1,0 +1,21 @@
+:root,.light {
+	--color-bg: #fff;
+	--color-face: #fff; /* import action element for dark mode*/
+	--color-deep: #ddd; /* empty space ,default body bg */
+
+	--color-fg:#222;
+	--color-pen:#bbb;
+
+	--color-accent:#26b;
+	--color-accent-low:rgba(34, 102, 187, 0.15);
+
+	--color-success: #282;
+	--color-success-low: rgba(34, 136, 34, 0.15);
+
+	--color-warning: #fc1;
+	--color-warning-low: rgba(255, 204, 17, 0.15);
+
+	--color-danger: #c33;
+	--color-danger-low:rgba(204, 51, 51, 0.15);
+}
+

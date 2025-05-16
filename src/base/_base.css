@@ -1,0 +1,57 @@
+*,*::after,*::before {box-sizing:border-box;}
+/* scroll */
+/* old webkit */
+*::-webkit-scrollbar {width: 10px;}
+*::-webkit-scrollbar-track {background: var(--color-deep);}
+*::-webkit-scrollbar-thumb {
+	background-color: var(--color-pen);
+	border-radius: 5px;
+	border: none;
+}
+* {
+	/*ie*/
+	scrollbar-base-color: var(--color-deep);
+	scrollbar-face-color: var(--color-pen);
+	scrollbar-3dlight-color: var(--color-deep);
+	scrollbar-highlight-color: var(--color-deep);
+	scrollbar-shadow-color: var(--color-deep);
+	scrollbar-darkshadow-color: var(--color-deep);
+	scrollbar-arrow-color: var(--color-deep);
+	/* new */
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-pen) var(--color-deep);
+}
+
+html {
+	line-height: 1.5;
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+}
+
+body {
+	padding: 0;
+	overflow-x: hidden;
+	color: var(--color-fg);
+	background-color: var(--color-deep);
+	margin: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+button:focus ,a:focus,input:focus{
+	outline: none ;
+}
+
+button:focus-visible ,a:focus-visible{
+	outline: 0.25em solid var(--color-accent-low);
+}
+
+button.success:focus-visible ,a.success:focus-visible{
+	outline: 0.25em solid var(--color-success-low);
+}
+button.warning:focus-visible ,a.warning:focus-visible{
+	outline: 0.25em solid var(--color-warning-low);
+}
+button.danger:focus-visible ,a.danger:focus-visible{
+	outline: 0.25em solid var(--color-danger-low);
+}

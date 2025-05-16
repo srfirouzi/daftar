@@ -1,0 +1,52 @@
+.shoji{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+    padding: 0 0.5em;
+    align-items: stretch;
+}
+.shoji>*{flex:4;min-height: 0;min-width: 0;}
+.shoji > aside{min-width: 220px;flex: 1;}
+
+@media (max-width:607px){
+.shoji > aside:first-child{
+    display: none;
+    background-color: var(--color-bg);
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4),0 6px 18px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    z-index: 100;
+}
+.shoji > aside:last-child{
+    display: none;
+    background-color: var(--color-bg);
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4),0 6px 18px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    z-index: 100;
+}
+}
+@media (min-width:608px) and (max-width:991px){
+.shoji > aside:first-child{display: block;}
+.shoji > aside:last-child{
+    display: none;
+    background-color: var(--color-bg);
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4),0 6px 18px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    z-index: 100;
+
+} 
+}
+@media (min-width:992px){
+.shoji > aside:first-child{display: block;}
+.shoji > aside:last-child{display: block;} 
+}
+
+.shoji > aside.show{display: block;}

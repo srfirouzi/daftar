@@ -1,0 +1,45 @@
+input.switch{
+	color: var(--color-accent);
+	width:2.75em!important;
+	height:1.5em!important;
+	display:inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	position:relative;
+	padding:0;
+	border-radius:0.75em;
+	background-color:var(--color-deep) ;
+	outline:0;
+	min-width:0;
+	min-height: 0;
+	transition:background-color 0.3s ease-out,border-color 0.3s ease-out
+}
+input.switch::-ms-check{
+	border:none;
+	background-color: transparent;
+}
+
+input.switch::before{
+	content:' ';
+	display: inline-block;
+	background-color:var(--color-face);
+	position:absolute;
+	width:calc( 1.25em - 2px);
+	height:calc( 1.25em - 2px);
+	border: none;
+	border-radius:0.75em;
+	top:0.125em;
+	left:calc( 0.125em + 1px);
+	transform: none;
+	transition:left 0.3s ease-out
+}
+
+
+
+input.switch:checked{background-color:currentColor;}
+input.switch:disabled::before{background-color: var(--color-bg);}
+.ltr input.switch::before,.switch::before{left:calc( 0.125em + 1px)}
+.rtl input.switch::before{left:calc( 1.25em + 1px)}
+.ltr input.switch:checked::before,input.switch:checked::before{left:calc( 1.25em + 1px) }
+.rtl input.switch:checked::before{left:calc( 0.125em + 1px)}
